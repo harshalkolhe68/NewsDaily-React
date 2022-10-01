@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-export class Newsbar extends Component {
-  render() {
+export const Newsbar = () => {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar fixed-top navbar-expand-lg bg-light">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">NewsDaily</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +36,3 @@ export class Newsbar extends Component {
       </div>
     )
   }
-}
-
-export default Newsbar
